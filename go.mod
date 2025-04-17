@@ -1,4 +1,4 @@
-module github.com/heluon/snowflake
+module github.com/harluo/snowflake
 
 go 1.24
 
