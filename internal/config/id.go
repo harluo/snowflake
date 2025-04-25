@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/harluo/boot"
+	"github.com/harluo/config"
 )
 
 type Id struct {
@@ -9,9 +9,9 @@ type Id struct {
 	Snowflake *Snowflake `json:"snowflake,omitempty" validate:"required"`
 }
 
-func newId(config *boot.Config) (id *Id, err error) {
+func newId(config *config.Getter) (id *Id, err error) {
 	id = new(Id)
-	err = config.Build().Get(&struct {
+	err = config.Get(&struct {
 		Id *Id `json:"id,omitempty" validate:"required"`
 	}{
 		Id: id,
