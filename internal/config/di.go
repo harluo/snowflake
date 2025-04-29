@@ -5,7 +5,7 @@ import (
 )
 
 func init() {
-	di.New().Get().Dependency().Puts(
+	di.New().Instance().Put(
 		newId,        // 统一标识配置
 		newSnowflake, // 配置
 	).Build().Apply()
