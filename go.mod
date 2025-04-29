@@ -6,6 +6,7 @@ require (
 	github.com/goexl/id v0.1.3
 	github.com/goexl/snowflake v0.0.9
 	github.com/harluo/boot v1.6.7
+	github.com/harluo/config v0.0.2
 	github.com/harluo/di v0.0.3
 )
 
@@ -27,7 +28,6 @@ require (
 	github.com/goexl/structer v0.1.9 // indirect
 	github.com/goexl/xiren v0.0.8 // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/harluo/config v0.0.2 // indirect
 	github.com/kkrypt0nn/spaceflake v1.5.1 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
