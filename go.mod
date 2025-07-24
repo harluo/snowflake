@@ -5,7 +5,7 @@ go 1.24
 require (
 	github.com/goexl/id v0.1.3
 	github.com/goexl/snowflake v0.0.9
-	github.com/harluo/config v0.0.7
+	github.com/harluo/config v0.0.8
 	github.com/harluo/di v0.0.5
 )
 
