@@ -8,9 +8,18 @@ import (
 
 type Generator = id.Generator
 
-func newGenerator(config *config.Snowflake) Generator {
-	return snowflake.New().
-		Machine(config.Machine).
-		Started(config.Started).
-		Build()
+func newGenerator(config *config.Snowflake) (generator Generator, err error) {
+	builder := snowflake.New().Machine(config.Machine)
+	if nil != config.Started {
+		if timestamp, te := config.Started.Time(); nil != te {
+			err = te
+		} else {
+			builder.Started(timestamp)
+		}
+	}
+	if nil == err {
+		generator = builder.Build()
+	}
+
+	return
 }

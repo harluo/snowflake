@@ -1,12 +1,12 @@
 package config
 
 import (
-	"time"
+	"github.com/harluo/snowflake/internal/config/internal"
 )
 
 type Snowflake struct {
 	// 时间点，有此配置后，生成的标识时间都为此配置时间
-	Started time.Time `json:"started,omitempty"`
+	Started *internal.Started `json:"started,omitempty"`
 	// 机器标识
 	Machine uint32 `default:"1" json:"machine,omitempty" validate:"required,min=1,max=2147483648"`
 }
