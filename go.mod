@@ -4,7 +4,7 @@ go 1.25
 
 require (
 	github.com/goexl/id v0.1.3
-	github.com/goexl/snowflake v0.0.9
+	github.com/goexl/snowflake v0.1.2
 	github.com/harluo/config v0.0.8
 	github.com/harluo/di v0.0.5
 )
@@ -32,7 +32,6 @@ require (
 	github.com/goexl/xiren v0.0.9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/harluo/boot v1.7.8 // indirect
-	github.com/kkrypt0nn/spaceflake v1.6.0 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
@@ -44,6 +43,7 @@ require (
 	github.com/olekukonko/tablewriter v1.1.1 // indirect
 	github.com/rs/xid v1.6.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	github.com/sony/sonyflake/v2 v2.2.0 // indirect
 	github.com/urfave/cli/v2 v2.27.7 // indirect
 	github.com/xrash/smetrics v0.0.0-20250705151800-55b8f293f342 // indirect
 	github.com/zs5460/art v0.3.0 // indirect

@@ -10,10 +10,7 @@ type Generator = id.Generator
 
 func newGenerator(config *config.Snowflake) Generator {
 	return snowflake.New().
-		Node(config.Node).
-		Worker(config.Worker).
-		Sequence(config.Sequence).
-		Epoch(config.Epoch).
-		Skip(config.Skip).
+		Machine(config.Machine).
+		Started(config.Started).
 		Build()
 }
